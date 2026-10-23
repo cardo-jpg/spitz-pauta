@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Spitz Pomer · Pauta estratégica</title>
+<meta name="description" content="Pauta estratégica da reunião no parque, Spitz Pomer. Dia de sol vende, dia de chuva custa 67% mais; o El Niño vem na alta temporada, e o plano em três frentes para blindar a receita.">
+<meta name="robots" content="noindex,nofollow">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F4F1EA; --paper-2:#FBFAF6; --paper-3:#EFEBE2;
+    --ink:#1B1620; --ink-2:#3B3340; --ink-soft:#6A6072; --line:#E3DCD0; --line-2:#D5CCBD;
+    --plum:#0F6A4A; --plum-deep:#0A4D37; --plum-wash:#E7F2EC;
+    --coral:#FF4D6D; --gold:#C85D12;
+    --good:#1C8A54; --bad:#C7371F;
+    --c-vendas:#2563EB; --c-rmkt:#0F6A4A; --c-esc:#D97706; --c-ing:#0891B2;
+    --sans:'Inter',system-ui,sans-serif; --disp:'Bricolage Grotesque',sans-serif; --mono:'JetBrains Mono',monospace;
+    --mw:1160px;
+  }
+  *{box-sizing:border-box;margin:0;padding:0;}
+  html{scroll-behavior:smooth;-webkit-text-size-adjust:100%;font-size:120%;}
+  body{background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:1rem;line-height:1.6;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:var(--mw);margin:0 auto;padding:0 26px;}
+  .disp{font-family:var(--disp);font-weight:800;letter-spacing:-.02em;line-height:1.02;text-wrap:balance;}
+  .eyebrow{font-family:var(--mono);font-size:.72rem;font-weight:500;letter-spacing:.24em;text-transform:uppercase;color:var(--plum);}
+  a{color:inherit;}
+  ::selection{background:var(--plum);color:#fff;}
+
+  .hero{position:relative;padding:80px 0 56px;border-bottom:1px solid var(--line);overflow:hidden;}
+  .hero::before{content:"";position:absolute;top:-160px;right:-140px;width:520px;height:520px;border-radius:50%;background:radial-gradient(circle,rgba(245,130,32,.13),transparent 68%);pointer-events:none;}
+  .hero .eyebrow{margin-bottom:20px;display:inline-block;}
+  .hero h1{font-size:clamp(2.7rem,7.4vw,5.1rem);}
+  .hero h1 .l2{display:block;color:var(--plum);position:relative;}
+  .hero h1 .l2::after{content:"";position:absolute;left:2px;bottom:.06em;width:.42em;height:.11em;background:var(--gold);border-radius:2px;}
+  .hero .thesis{max-width:64ch;margin-top:24px;font-size:1.1rem;color:var(--ink-2);}
+  .hero .thesis b{color:var(--ink);font-weight:600;}
+  .glance{display:flex;flex-wrap:wrap;gap:0;margin-top:42px;border:1px solid var(--line-2);border-radius:16px;overflow:hidden;background:var(--paper-2);}
+  .glance .g{flex:1 1 150px;padding:18px 22px;border-right:1px solid var(--line);}
+  .glance .g:last-child{border-right:none;}
+  .glance .k{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);}
+  .glance .n{font-family:var(--disp);font-weight:800;font-size:2rem;margin-top:5px;font-variant-numeric:tabular-nums;}
+  .glance .d{font-size:.78rem;color:var(--ink-soft);margin-top:1px;}
+  .glance .n.up{color:var(--good);} .glance .n.pl{color:var(--plum);} .glance .n.bad{color:var(--bad);} .glance .n.sm{font-size:1.5rem;line-height:1.1;}
+
+  .nav{position:sticky;top:0;z-index:20;background:rgba(244,241,234,.88);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .nav .inner{max-width:var(--mw);margin:0 auto;padding:11px 26px;display:flex;gap:6px;flex-wrap:wrap;align-items:center;}
+  .nav .brand{font-family:var(--disp);font-weight:800;font-size:.95rem;margin-right:auto;letter-spacing:-.01em;}
+  .nav a{font-size:.8rem;font-weight:500;text-decoration:none;color:var(--ink-2);padding:6px 11px;border-radius:20px;transition:.15s;}
+  .nav a:hover{background:var(--plum-wash);color:var(--plum);}
+
+  section{padding:64px 0;border-bottom:1px solid var(--line);}
+  .shead{max-width:760px;margin-bottom:34px;}
+  .shead .rn{font-family:var(--mono);font-size:.78rem;color:var(--gold);letter-spacing:.1em;font-weight:700;}
+  .shead h2{font-family:var(--disp);font-weight:800;font-size:clamp(1.8rem,4.2vw,2.7rem);margin-top:10px;}
+  .shead p{margin-top:14px;font-size:1.02rem;color:var(--ink-2);}
+  .shead p b{color:var(--ink);font-weight:600;}
+
+  .act{padding:60px 0 8px;border-bottom:none;}
+  .act .lab{font-family:var(--mono);font-size:.72rem;letter-spacing:.24em;text-transform:uppercase;color:var(--ink-soft);}
+  .act h2{font-family:var(--disp);font-weight:800;font-size:clamp(2.1rem,5.6vw,3.4rem);margin-top:8px;line-height:1.02;}
+  .act h2 .ac{color:var(--gold);} .act h2 .bd{color:var(--bad);}
+  .act p{margin-top:14px;font-size:1.05rem;color:var(--ink-2);max-width:62ch;}
+
+  .letter{background:var(--paper-2);border:1px solid var(--line-2);border-left:5px solid var(--plum);border-radius:18px;padding:30px 34px;}
+  .letter.warn{border-left-color:var(--gold);}
+  .letter p{font-size:1.05rem;color:var(--ink-2);line-height:1.62;} .letter p + p{margin-top:14px;} .letter b{color:var(--ink);font-weight:600;}
+  .letter .by{margin-top:20px;font-family:var(--mono);font-size:.76rem;color:var(--ink-soft);} .letter .by b{color:var(--plum);}
+
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.2,.6,.2,1),transform .7s cubic-bezier(.2,.6,.2,1);}
+  .reveal.in{opacity:1;transform:none;}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1;transform:none;transition:none;}}
+
+  .stats{display:grid;grid-template-columns:repeat(auto-fit,minmax(178px,1fr));gap:0;border:1px solid var(--line-2);border-radius:18px;overflow:hidden;background:var(--paper-2);}
+  .stat{padding:22px 24px;border-right:1px solid var(--line);border-bottom:1px solid var(--line);}
+  .stat .k{font-family:var(--mono);font-size:.66rem;letter-spacing:.14em;text-transform:uppercase;color:var(--ink-soft);}
+  .stat .n{font-family:var(--disp);font-weight:800;font-size:2.2rem;margin-top:8px;font-variant-numeric:tabular-nums;line-height:1;}
+  .stat .n small{font-family:var(--sans);font-size:.9rem;font-weight:500;color:var(--ink-soft);}
+  .stat .d{font-size:.8rem;color:var(--ink-soft);margin-top:7px;}
+  .stat .n.up{color:var(--good);} .stat .n.pl{color:var(--plum);} .stat .n.gd{color:var(--good);} .stat .n.wn{color:var(--gold);} .stat .n.bad{color:var(--bad);}
+  .stat .n.sm{font-size:1.55rem;line-height:1.12;overflow-wrap:break-word;}
+
+  .callouts{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:24px;}
+  @media(max-width:680px){.callouts{grid-template-columns:1fr;}}
+  .call{padding:20px 22px;border-radius:16px;border:1px solid var(--line-2);background:var(--paper-2);}
+  .call .tag{font-family:var(--mono);font-size:.68rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;color:var(--plum);}
+  .call.good{border-color:rgba(28,138,84,.35);background:#F0F6F1;} .call.good .tag{color:var(--good);}
+  .call.warn{border-color:rgba(200,93,18,.38);background:#FBF0E6;} .call.warn .tag{color:var(--gold);}
+  .call.bad{border-color:rgba(199,55,31,.35);background:#F9EDEA;} .call.bad .tag{color:var(--bad);}
+  .call p{margin-top:8px;font-size:.94rem;color:var(--ink-2);} .call p b{color:var(--ink);font-weight:600;}
+
+  .funnel{display:flex;flex-direction:column;gap:11px;border:1px solid var(--line-2);border-radius:18px;background:var(--paper-2);padding:26px 24px;}
+  .fstep .lab{display:flex;justify-content:space-between;font-size:.84rem;margin-bottom:5px;gap:10px;}
+  .fstep .lab .nmm{color:var(--ink-soft);} .fstep .lab .nmm b{color:var(--ink);font-family:var(--mono);font-weight:700;font-size:.95rem;}
+  .fstep .lab .rt{font-family:var(--mono);font-size:.72rem;color:var(--ink-soft);text-align:right;}
+  .ftrack{height:38px;background:var(--paper-3);border-radius:9px;overflow:hidden;}
+  .fbar{height:100%;display:flex;align-items:center;padding-left:14px;font-family:var(--mono);font-weight:700;font-size:.86rem;color:#fff;border-radius:9px;min-width:62px;white-space:nowrap;transition:width .9s cubic-bezier(.2,.6,.2,1);}
+  .fb1{background:var(--good);} .fb2{background:var(--c-ing);} .fb3{background:var(--gold);} .fb4{background:var(--bad);}
+
+  .tblw{border:1px solid var(--line-2);border-radius:18px;overflow:hidden;background:var(--paper-2);overflow-x:auto;}
+  table{width:100%;border-collapse:collapse;font-size:.9rem;min-width:520px;}
+  thead th{font-family:var(--mono);font-size:.64rem;letter-spacing:.08em;text-transform:uppercase;color:var(--ink-soft);text-align:right;padding:13px 16px;background:var(--paper-3);font-weight:700;}
+  thead th:first-child{text-align:left;}
+  tbody td{padding:12px 16px;text-align:right;border-top:1px solid var(--line);font-variant-numeric:tabular-nums;}
+  tbody td:first-child{text-align:left;font-weight:600;}
+  tbody tr:hover{background:var(--plum-wash);}
+  tbody tr.hi{background:#F0F6F1;}
+  tbody tr.lo{background:#F9EDEA;}
+  tbody tr.tot td{border-top:2px solid var(--line-2);font-weight:700;background:var(--paper-3);}
+  .up{color:var(--good);font-weight:700;} .dn{color:var(--bad);font-weight:700;}
+
+  .patterns{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px;margin-top:22px;}
+  .patc{background:var(--paper-2);border:1px solid var(--line-2);border-radius:14px;padding:18px 20px;}
+  .patc .pn{font-family:var(--mono);font-size:.68rem;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:7px;}
+  .patc h4{font-size:1rem;margin-bottom:5px;}
+  .patc p{font-size:.86rem;color:var(--ink-soft);line-height:1.55;}
+  .patc p b{color:var(--ink);font-weight:600;}
+
+  .errs{display:grid;gap:16px;}
+  .err{display:grid;grid-template-columns:44px 1fr;gap:18px;align-items:start;padding:22px 24px;border:1px solid var(--line-2);border-left:5px solid var(--bad);border-radius:16px;background:var(--paper-2);}
+  .err .no{font-family:var(--disp);font-weight:800;font-size:1.5rem;color:var(--bad);font-variant-numeric:tabular-nums;}
+  .err h4{font-family:var(--disp);font-weight:800;font-size:1.18rem;}
+  .err p{font-size:.92rem;color:var(--ink-2);margin-top:7px;} .err p b{color:var(--ink);font-weight:600;}
+  .err .fix{margin-top:11px;font-size:.86rem;color:var(--ink-2);border-left:2.5px solid var(--good);padding:3px 0 3px 13px;} .err .fix b{color:var(--good);}
+
+  .recs{display:grid;grid-template-columns:repeat(auto-fit,minmax(258px,1fr));gap:14px;}
+  .rec{padding:22px;border-radius:16px;background:var(--paper-2);border:1px solid var(--line-2);}
+  .rec .rn2{font-family:var(--mono);font-size:.66rem;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700;}
+  .rec h4{font-family:var(--disp);font-weight:800;font-size:1.1rem;margin-top:6px;}
+  .rec p{font-size:.89rem;color:var(--ink-2);margin-top:8px;} .rec p b{color:var(--ink);font-weight:600;}
+
+  .proj{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:0;border:1px solid var(--line-2);border-radius:18px;overflow:hidden;background:var(--paper-2);margin-top:4px;}
+  .proj .pc{padding:20px 22px;border-right:1px solid var(--line);}
+  .proj .pc:last-child{border-right:none;}
+  .proj .pc.now{background:#F9EDEA;} .proj .pc.goal{background:#F0F6F1;}
+  .proj .pk{font-family:var(--mono);font-size:.64rem;letter-spacing:.1em;text-transform:uppercase;color:var(--ink-soft);}
+  .proj .pv{font-family:var(--disp);font-weight:800;font-size:1.7rem;margin-top:6px;font-variant-numeric:tabular-nums;}
+  .proj .pd{font-size:.78rem;color:var(--ink-soft);margin-top:4px;}
+  .proj .pv.bad{color:var(--bad);} .proj .pv.good{color:var(--good);}
+
+  .split{display:grid;grid-template-columns:1fr 1fr;gap:0;border:1px solid var(--line-2);border-radius:18px;overflow:hidden;background:var(--paper-2);}
+  @media(max-width:680px){.split{grid-template-columns:1fr;}}
+  .split .sc{padding:22px 24px;} .split .sc:first-child{border-right:1px solid var(--line);}
+  @media(max-width:680px){.split .sc:first-child{border-right:none;border-bottom:1px solid var(--line);}}
+  .split .sc.sun{background:#F0F6F1;} .split .sc.rain{background:#F9EDEA;}
+  .split .sh{font-family:var(--mono);font-size:.7rem;letter-spacing:.1em;text-transform:uppercase;font-weight:700;margin-bottom:12px;}
+  .split .sc.sun .sh{color:var(--good);} .split .sc.rain .sh{color:var(--bad);}
+  .split ul{list-style:none;} .split li{font-size:.9rem;color:var(--ink-2);padding:7px 0;border-top:1px solid var(--line);} .split li:first-child{border-top:none;} .split li b{color:var(--ink);font-weight:600;}
+
+  .note{margin-top:22px;font-size:.82rem;color:var(--ink-soft);background:var(--paper-2);border:1px dashed var(--line-2);border-radius:14px;padding:18px 20px;line-height:1.55;}
+  .note b{color:var(--ink-2);}
+
+  .decis{display:grid;gap:14px;}
+  .deci{display:grid;grid-template-columns:40px 1fr;gap:18px;align-items:start;padding:22px 24px;border:1px solid var(--line-2);border-left:5px solid var(--plum);border-radius:16px;background:var(--paper-2);}
+  .deci.key{border-left-color:var(--gold);background:#FBF0E6;}
+  .deci .no{font-family:var(--disp);font-weight:800;font-size:1.4rem;color:var(--plum);} .deci.key .no{color:var(--gold);}
+  .deci h4{font-family:var(--disp);font-weight:800;font-size:1.1rem;}
+  .deci p{font-size:.9rem;color:var(--ink-2);margin-top:6px;} .deci p b{color:var(--ink);font-weight:600;}
+
+  .foot{padding:56px 0 44px;}
+  .sig{font-family:var(--mono);font-size:.78rem;color:var(--ink-soft);letter-spacing:.04em;} .sig b{color:var(--plum);}
+  .foot-links{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:18px;}
+  .foot-links a{font-family:var(--mono);font-size:.8rem;font-weight:700;text-decoration:none;color:#fff;background:var(--gold);border:1px solid var(--gold);padding:9px 16px;border-radius:20px;transition:.15s;}
+  .foot-links a:hover{background:var(--plum);border-color:var(--plum);}
+  .disclaim{font-size:.74rem;color:var(--ink-soft);margin-top:12px;max-width:74ch;line-height:1.55;}
+</style>
+</head>
+<body>
+
+<nav class="nav"><div class="inner">
+  <span class="brand">Cardô<span style="color:var(--plum)">.</span></span>
+  <a href="#diagnostico">Diagnóstico</a>
+  <a href="#padroes">Padrões</a>
+  <a href="#cliente">Cliente</a>
+  <a href="#elnino">El Niño</a>
+  <a href="#plano">O plano</a>
+  <a href="#campanhas">Campanhas</a>
+  <a href="#decisoes">Decisões</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <span class="eyebrow">Pauta estratégica · Reunião no parque · Spitz Pomer</span>
+  <h1 class="disp">Dia de sol vende.<span class="l2">Dia de chuva custa 67% mais.</span></h1>
+  <p class="thesis">Cruzamos <b>287 dias de campanha de 2026</b> com a chuva real de Pomerode, dia a dia. O padrão é claro e caro: <b>num fim de semana de chuva, o Spitz vende 51% menos e paga 67% mais por venda</b>. Esta pauta transforma esse diagnóstico num plano em três frentes: blindar a receita contra o clima, usar a Black Friday como alavanca e destravar o site.</p>
+  <div class="glance">
+    <div class="g"><div class="k">Fim de semana de chuva</div><div class="n bad">−51%</div><div class="d">vendas vs. fim de semana seco</div></div>
+    <div class="g"><div class="k">Custo por venda na chuva</div><div class="n bad">+67%</div><div class="d">R$ 40 para R$ 67 no fim de semana</div></div>
+    <div class="g"><div class="k">Dias de chuva em 2026</div><div class="n pl">30%</div><div class="d">87 de 287 dias de campanha</div></div>
+    <div class="g"><div class="k">El Niño</div><div class="n bad sm">Pico no verão</div><div class="d">a alta temporada, dos mais fortes desde 1950</div></div>
+  </div>
+</div></header>
+
+<div class="wrap">
+
+  <!-- CARTA -->
+  <section style="border-bottom:none;padding-bottom:20px">
+    <div class="letter reveal">
+      <p>Esta não é uma lista de ideias soltas. A gente foi <b>fundo no dado</b>: puxou o histórico da conta mês a mês, baixou a chuva real de Pomerode de 2026 e cruzou venda por venda com o tempo, leu o relatório de visitantes e pesquisou a previsão climática para os próximos meses.</p>
+      <p>O que apareceu foi um só fio condutor: <b>o maior fator do caixa do Spitz não é criativo nem verba: é o clima</b>. E a previsão é que ele piore exatamente na janela mais importante do ano, o verão. A boa notícia: dá para blindar a receita contra isso, e algumas peças já estão rodando. Este documento mostra o diagnóstico com número e o plano para a reunião.</p>
+      <div class="by">Cardô Marketing · gestão de tráfego · para a equipe <b>Spitz Pomer</b></div>
+    </div>
+  </section>
+
+  <!-- ATO 1 -->
+  <div class="act reveal"><div class="lab">Ato 1</div><h2 class="disp">O <span class="ac">diagnóstico</span>, com número</h2>
+    <p>O que os dados da conta, o histórico de visitantes e o clima dizem, antes de qualquer ação.</p></div>
+
+  <!-- I: CLIMA x VENDAS -->
+  <section id="diagnostico">
+    <div class="shead reveal"><div class="rn">I</div><h2 class="disp">O clima manda no caixa</h2>
+      <p>Cruzamos os <b>287 dias de campanha de 2026</b> com a precipitação diária de Pomerode. Nos dias de chuva, o parque não só vende menos: paga muito mais caro por cada venda.</p></div>
+    <div class="stats reveal">
+      <div class="stat"><div class="k">Dia seco · vendas/dia</div><div class="n gd">13,8</div><div class="d">202 dias · CPA R$ 44</div></div>
+      <div class="stat"><div class="k">Dia de chuva · vendas/dia</div><div class="n bad">8,3</div><div class="d">−40% · CPA R$ 67</div></div>
+      <div class="stat"><div class="k">Chuva forte · vendas/dia</div><div class="n bad">6,5</div><div class="d">−53% · CPA R$ 79</div></div>
+      <div class="stat"><div class="k">Dias de chuva no ano</div><div class="n pl">30%</div><div class="d">87 de 287 dias</div></div>
+    </div>
+    <div class="tblw reveal" style="margin-top:20px">
+      <table>
+        <thead><tr><th>Tipo de dia</th><th>Vendas/dia</th><th>Custo/venda</th><th>Nº de dias</th></tr></thead>
+        <tbody>
+          <tr class="hi"><td>Dia seco (&lt; 5mm)</td><td>13,8</td><td>R$ 44</td><td>202</td></tr>
+          <tr><td>Dia de chuva (≥ 5mm)</td><td class="dn">8,3 (−40%)</td><td class="dn">R$ 67 (+51%)</td><td>85</td></tr>
+          <tr class="lo"><td>Chuva forte (≥ 15mm)</td><td class="dn">6,5 (−53%)</td><td class="dn">R$ 79 (+78%)</td><td>39</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="shead reveal" style="margin-top:36px"><h2 class="disp" style="font-size:1.6rem">No fim de semana, onde está o dinheiro</h2>
+      <p>55,6% do movimento do parque é no fim de semana. É aí que a chuva machuca mais.</p></div>
+    <div class="proj reveal">
+      <div class="pc goal"><div class="pk">Fim de semana seco</div><div class="pv good">16,4</div><div class="pd">vendas/dia · CPA R$ 40</div></div>
+      <div class="pc now"><div class="pk">Fim de semana com chuva</div><div class="pv bad">8,1</div><div class="pd">vendas/dia (−51%) · CPA R$ 67 (+67%)</div></div>
+      <div class="pc"><div class="pk">A diferença</div><div class="pv">½</div><div class="pd">a chuva corta o fim de semana pela metade</div></div>
+    </div>
+    <div class="callouts reveal">
+      <div class="call bad"><div class="tag">✗ O problema</div><p><b>O clima é a maior variável do caixa.</b> Não é detalhe de um mês ruim: 30% dos dias de 2026 foram de chuva, e cada um vendeu menos e custou mais caro.</p></div>
+      <div class="call good"><div class="tag">✓ A oportunidade</div><p><b>Isso é controlável.</b> Dá para desacoplar a venda do clima: a pessoa comprar no dia de chuva e visitar no dia de sol. É a Frente 1 do plano.</p></div>
+    </div>
+  </section>
+
+  <!-- II: SAZONALIDADE + DIA DA SEMANA -->
+  <section id="padroes">
+    <div class="shead reveal"><div class="rn">II</div><h2 class="disp">Sazonalidade e dia da semana</h2>
+      <p>Dois padrões se repetem o ano todo: o <b>mês certo</b> e o <b>dia certo</b>. Os meses mais secos entregam o melhor custo; a compra acontece na sexta e no sábado.</p></div>
+    <div class="tblw reveal">
+      <table>
+        <thead><tr><th>Mês · 2026</th><th>Investido</th><th>Vendas</th><th>Custo/venda</th><th>Chuva</th></tr></thead>
+        <tbody>
+          <tr><td>Janeiro</td><td>R$ 25,0 mil</td><td>343</td><td class="dn">R$ 73</td><td>205mm</td></tr>
+          <tr><td>Fevereiro</td><td>R$ 16,9 mil</td><td>195</td><td class="dn">R$ 86</td><td>200mm</td></tr>
+          <tr class="hi"><td>Março</td><td>R$ 13,1 mil</td><td>314</td><td class="up">R$ 42</td><td>116mm</td></tr>
+          <tr class="hi"><td>Abril</td><td>R$ 8,6 mil</td><td>272</td><td class="up">R$ 32</td><td>118mm</td></tr>
+          <tr><td>Maio</td><td>R$ 13,0 mil</td><td>186</td><td class="dn">R$ 70</td><td>118mm</td></tr>
+          <tr><td>Junho</td><td>R$ 21,6 mil</td><td>502</td><td class="up">R$ 43</td><td>119mm</td></tr>
+          <tr class="hi"><td>Julho · pico do ano</td><td>R$ 38,8 mil</td><td>1.073</td><td class="up">R$ 36</td><td>146mm</td></tr>
+          <tr><td>Agosto</td><td>R$ 12,4 mil</td><td>237</td><td>R$ 52</td><td>191mm</td></tr>
+          <tr><td>Setembro</td><td>R$ 11,4 mil</td><td>249</td><td>R$ 46</td><td>186mm</td></tr>
+          <tr><td>Outubro*</td><td>R$ 8,8 mil</td><td>125</td><td class="dn">R$ 70</td><td>169mm</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="callouts reveal">
+      <div class="call good"><div class="tag">Leitura</div><p><b>Julho (férias de inverno) foi o pico:</b> 1.073 vendas e o melhor custo (R$ 36). Demanda sazonal forte com clima razoável.</p></div>
+      <div class="call warn"><div class="tag">Leitura</div><p><b>Os meses secos (mar/abr) têm o melhor CPA</b> (R$ 32 a 42); os mais chuvosos (jan, fev, out), o pior (R$ 70 a 86). O mesmo padrão do recorte diário.</p></div>
+    </div>
+    <div class="shead reveal" style="margin-top:36px"><h2 class="disp" style="font-size:1.6rem">Dia da semana: quando a venda acontece</h2>
+      <p>A compra acontece na <b>sexta e no sábado</b> (as pessoas compram para o fim de semana), e é aí que o custo é menor. No domingo, a pessoa já está no parque.</p></div>
+    <div class="tblw reveal">
+      <table style="min-width:420px">
+        <thead><tr><th>Dia</th><th>Vendas/dia</th><th>Custo/venda</th></tr></thead>
+        <tbody>
+          <tr class="hi"><td>Sexta</td><td>15,3</td><td class="up">R$ 39</td></tr>
+          <tr class="hi"><td>Sábado</td><td>14,0</td><td class="up">R$ 42</td></tr>
+          <tr><td>Domingo</td><td>12,5</td><td>R$ 54</td></tr>
+          <tr><td>Segunda a quinta</td><td>10 a 11</td><td>R$ 52 a 54</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="note reveal"><b>*</b> Outubro parcial, até o dia 18. O relatório de visitantes confirma o outro lado da moeda: domingo é o dia de maior visita e quinta o mais fraco. A compra (sex/sáb) antecede a visita (sáb/dom).</div>
+  </section>
+
+  <!-- III: CLIENTE -->
+  <section id="cliente">
+    <div class="shead reveal"><div class="rn">III</div><h2 class="disp">Quem é o cliente</h2>
+      <p>Do relatório dos <b>Termos de Aventura</b> (setembro/2026, 3.737 assinaturas): quem compra, de onde vem, e onde a verba está bem gasta.</p></div>
+    <div class="stats reveal">
+      <div class="stat"><div class="k">Conhecem pelo Instagram</div><div class="n pl">61%</div><div class="d">canal nº 1, disparado</div></div>
+      <div class="stat"><div class="k">Vêm com dependentes</div><div class="n">47%</div><div class="d">família · 1,4 por grupo</div></div>
+      <div class="stat"><div class="k">Movimento no fim de semana</div><div class="n">55,6%</div><div class="d">domingo campeão · quinta o buraco</div></div>
+      <div class="stat"><div class="k">Vêm de fora de SC</div><div class="n">48%</div><div class="d">Paraná é o 2º estado (15,6%)</div></div>
+    </div>
+    <div class="patterns reveal">
+      <div class="patc"><div class="pn">Canal</div><h4>Instagram é o motor</h4><p><b>61% conhecem o parque pelo Instagram</b> (indicação 11%, Google 5%, Facebook 1,6%). Escalar o Instagram é escalar o parque.</p></div>
+      <div class="patc"><div class="pn">Geografia</div><h4>Paraná é o 2º mercado</h4><p>48% vêm de fora de SC. <b>Curitiba é a 2ª cidade</b> (atrás só de Blumenau), e o PR é o 2º estado. Geo no PR e parcerias turísticas são caminho direto.</p></div>
+      <div class="patc"><div class="pn">Perfil</div><h4>Família, 35 a 44 anos</h4><p><b>47% vêm com dependentes</b> e a faixa 35 a 44 (38%) domina quem assina. Combo família e linguagem para pai/mãe elevam o ticket.</p></div>
+      <div class="patc"><div class="pn">Agenda</div><h4>Quinta é o buraco</h4><p>Domingo traz 358 assinaturas/dia; <b>quinta, só 38</b>. Promo de dia útil equilibra a ocupação e aproveita capacidade ociosa.</p></div>
+    </div>
+  </section>
+
+  <!-- IV: EL NIÑO -->
+  <section id="elnino">
+    <div class="shead reveal"><div class="rn">IV</div><h2 class="disp">O cenário que vem: El Niño</h2>
+      <p>O que tornou 2026 difícil não vai embora, e piora na hora errada. O El Niño está <b>confirmado</b>, com pico entre primavera e verão.</p></div>
+    <div class="letter warn reveal">
+      <p>Os boletins da <b>Defesa Civil de SC e da Epagri/Ciram</b> confirmam o El Niño em 2026, com <b>pico entre a primavera e o verão de 2026/27</b>, podendo ser um dos eventos mais fortes desde 1950, e se estendendo até o outono de 2027. O efeito em Santa Catarina é mais chuva e mais temporais (com risco de vento forte e granizo). O estado chegou a decretar alerta climático.</p>
+      <p>O problema de fundo é de calendário: <b>a alta temporada do parque é o verão</b> (férias de dezembro a fevereiro), exatamente quando a chuva será pior. A maior janela de receita do ano vai pegar o pior clima. Clima deixou de ser azar pontual: vira risco estrutural que precisa de um plano. É o que vem a seguir.</p>
+      <div class="by">Fontes: boletins Defesa Civil SC e Epagri/Ciram · 2026 · chuva histórica de Pomerode (open-meteo)</div>
+    </div>
+  </section>
+
+  <!-- ATO 2 -->
+  <div class="act reveal"><div class="lab">Ato 2</div><h2 class="disp">O <span class="ac">plano</span>: três frentes</h2>
+    <p>A resposta ao diagnóstico, da mais estratégica (blindar o caixa) à de base (destravar o site).</p></div>
+
+  <!-- V: FRENTE 1 CLIMA -->
+  <section id="plano">
+    <div class="shead reveal"><div class="rn">V</div><h2 class="disp">Frente 1: Blindar a receita contra o clima</h2>
+      <p>A ideia que muda o jogo: <b>desacoplar a venda do clima do dia</b>. Hoje a venda e o sol andam juntos (−51% num fim de semana de chuva). O objetivo é a pessoa comprar independente do tempo e visitar no dia bom.</p></div>
+    <div class="split reveal">
+      <div class="sc sun"><div class="sh">☀ Semana / dia de sol</div><ul>
+        <li>Concentra verba em <b>"venha neste fim de semana"</b></li>
+        <li>Criativo <b>"dia de parque"</b></li>
+        <li>Escala o que está convertendo</li>
+      </ul></div>
+      <div class="sc rain"><div class="sh">☂ Semana / dia de chuva</div><ul>
+        <li>Segura o "venha agora" e <b>vende voucher com validade</b></li>
+        <li><b>Captura lead no WhatsApp</b> para converter no sol</li>
+        <li>Mantém só o reconhecimento barato</li>
+      </ul></div>
+    </div>
+    <div class="patterns reveal">
+      <div class="patc"><div class="pn">01 · a maior alavanca</div><h4>Voucher com validade longa</h4><p>Passaporte válido por 3 a 6 meses ou com data flexível. <b>A venda acontece na chuva; a visita, no sol.</b> A Black Friday é o gatilho perfeito para lançar.</p></div>
+      <div class="patc"><div class="pn">02 · tira o medo</div><h4>Reagendamento ("garantia de sol")</h4><p>Choveu no dia marcado? Remarca sem custo. Tira o medo de comprar antecipado e protege a experiência: quem vai na chuva não volta feliz.</p></div>
+      <div class="patc"><div class="pn">03 · já rodando</div><h4>Regra de verba por clima</h4><p>O radar que a Cardô montou no sistema <b>já antecipa a chuva da semana</b>. A verba deixa de reagir e passa a se planejar (ver quadro acima).</p></div>
+      <div class="patc"><div class="pn">04 · já no ar</div><h4>Criativos de clima na gaveta</h4><p>A linha <b>"Fique ligado no clima"</b> já roda para os dias bons. Falta a versão "compre agora, venha no sol" para os dias ruins.</p></div>
+      <div class="patc"><div class="pn">05 · a ponte</div><h4>Captar na chuva, vender no sol</h4><p>Dia ruim vira captação (WhatsApp/lead). Quando a previsão virar, dispara para a base: <b>"amanhã faz sol, bora?"</b>.</p></div>
+      <div class="patc"><div class="pn">06 · o escudo</div><h4>Recorrência</h4><p>Passaporte sazonal, clube ou plano: <b>receita que não depende do dia</b>. É o maior escudo contra um verão inteiro de El Niño.</p></div>
+    </div>
+    <div class="note reveal"><b>Onde estamos:</b> os itens 03 e 04 já estão rodando na operação. O que destrava todo o resto são os itens 01 e 02: as duas <b>travas comerciais</b>, que são decisão do Paulo.</div>
+  </section>
+
+  <!-- VI: CAMPANHAS ESPECÍFICAS -->
+  <section id="campanhas">
+    <div class="shead reveal"><div class="rn">VI</div><h2 class="disp">Campanhas específicas: os ads certos nos dias certos</h2>
+      <p>Além de blindar a receita, três campanhas desenhadas para atacar pontos exatos: o <b>dia</b>, o <b>clima</b> e <b>quem é imune a ele</b>.</p></div>
+    <div class="letter reveal" style="margin-bottom:22px">
+      <p><b>O insight que muda a conta:</b> 48% dos visitantes vêm de fora de SC, e o Paraná é o 2º estado (Curitiba é a 2ª cidade). <b>Quem vem de longe planeja a viagem com antecedência e vai com qualquer tempo</b>, não cancela pela previsão do dia. Mirar esse público não é só crescer: é comprar receita que <b>não oscila com a chuva local</b>.</p>
+    </div>
+    <div class="patterns reveal">
+      <div class="patc"><div class="pn">Campanha 1 · receita estável</div><h4>Viajante (PR / SP / RJ)</h4><p>Mira quem vem de longe: planeja antes, vai com chuva ou sol. Geo nos mercados emissores + voucher + parceria com hotéis de Pomerode/Blumenau. <b>A frente que blinda o caixa sem depender de desconto.</b></p></div>
+      <div class="patc"><div class="pn">Campanha 2 · no automático</div><h4>Clima gatilhado por previsão</h4><p>O radar da Cardô liga o criativo certo sozinho: previsão de sol para "corre, semana de sol"; previsão de chuva para voucher e antecipada. É o <b>"ads certos nos dias certos"</b> automatizado, e os criativos já existem.</p></div>
+      <div class="patc"><div class="pn">Campanha 3 · sobe o ticket</div><h4>Quinta temática</h4><p>Preenche o dia mais fraco (38 visitas/dia vs. 358 do domingo) com público que já tem campanha (<b>escola, aniversariante</b>) e combo família para subir o ticket médio.</p></div>
+    </div>
+    <div class="note reveal"><b>Camada de público (vale para todas):</b> subir os 3.737 Termos assinados como <b>público personalizado + lookalike dos compradores reais</b>, e uma campanha de <b>remarketing</b> de quem visitou o site e não comprou. Mira de alta qualidade, hoje pouco explorada.</div>
+  </section>
+
+  <!-- FRENTE 2: BLACK FRIDAY -->
+  <section>
+    <div class="shead reveal"><div class="rn">VII</div><h2 class="disp">Frente 2: Black Friday (a alavanca)</h2>
+      <p>A Black Friday (<b>28/11</b>, que vira Black Week) é a chance de <b>vender volume com validade longa</b>, resolvendo oferta e clima de uma vez. Compra agora no desconto, usa num dia de sol.</p></div>
+    <div class="recs reveal">
+      <div class="rec"><div class="rn2">A oferta</div><h4>Desconto + voucher</h4><p>Lote BF no Passaporte + <b>voucher com validade estendida</b> + combo família + passaporte como presente de Natal.</p></div>
+      <div class="rec"><div class="rn2">A estrutura</div><h4>Duas fases (como a Oktoberfest)</h4><p><b>Antecipação</b> (~17/11, captura lista e WhatsApp) + <b>Ativa</b> (24 a 30/11, oferta no ar com urgência).</p></div>
+      <div class="rec"><div class="rn2">A mira</div><h4>No que o dado mostra</h4><p>Instagram em primeiro, geo reforçada no <b>Paraná</b>, criativo de <b>família</b> (47%) e linguagem para a faixa 35 a 44.</p></div>
+      <div class="rec"><div class="rn2">Os canais</div><h4>Meta + Google + base</h4><p>Meta (site + WhatsApp), Google (Search "ingresso spitz" + PMax) e a base própria (remarketing + HubSpot).</p></div>
+    </div>
+    <div class="note reveal"><b>Decidir com o Paulo:</b> o desconto, a validade do voucher, a meta de vendas e a verba extra concentrada na semana (respeitando o teto do mês).</div>
+  </section>
+
+  <!-- FRENTE 3: VELOCIDADE -->
+  <section>
+    <div class="shead reveal"><div class="rn">VIII</div><h2 class="disp">Frente 3: Velocidade do site</h2>
+      <p>O Google está <b>reprovando a página</b> nos dados de usuário real (CrUX), e <b>pior no celular</b>, onde está a maioria do público de um parque.</p></div>
+    <div class="tblw reveal">
+      <table style="min-width:460px">
+        <thead><tr><th>Métrica</th><th>Celular</th><th>Desktop</th><th>Ideal</th></tr></thead>
+        <tbody>
+          <tr><td>Abertura do conteúdo (LCP)</td><td class="dn">2,9s</td><td>2,8s</td><td>&lt; 2,5s</td></tr>
+          <tr><td>Resposta ao toque (INP)</td><td class="dn">262ms</td><td>138ms</td><td>&lt; 200ms</td></tr>
+          <tr><td>Primeira coisa na tela (FCP)</td><td class="dn">2,9s</td><td>2,5s</td><td>&lt; 1,8s</td></tr>
+          <tr><td>Resposta do servidor (TTFB)</td><td class="dn">1,3s</td><td class="dn">1,3s</td><td>&lt; 0,8s</td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="errs reveal" style="margin-top:24px">
+      <div class="err">
+        <div class="no">1</div>
+        <div><h4>Servidor lento (TTFB 1,3s)</h4>
+          <p>O servidor demora quase o dobro do ideal só para começar a responder, antes de a página carregar qualquer coisa. É a maior alavanca e a mais invisível.</p>
+          <div class="fix"><b>Corrigir:</b> ativar cache + CDN (ex.: Cloudflare). Melhora tudo de uma vez.</div></div>
+      </div>
+      <div class="err">
+        <div class="no">2</div>
+        <div><h4>Imagens pesadas (abertura ~2,9s)</h4>
+          <p>A foto do topo (aquela que já estava feia) é o maior elemento da tela e pesa demais.</p>
+          <div class="fix"><b>Corrigir:</b> comprimir, converter para WebP e servir no tamanho certo. Resolve a velocidade <b>e</b> a foto feia de uma vez.</div></div>
+      </div>
+      <div class="err">
+        <div class="no">3</div>
+        <div><h4>Excesso de JavaScript (toque trava em 262ms)</h4>
+          <p>Muitos scripts de terceiros (HubSpot, rastreadores) seguram o navegador e deixam o toque lento no celular.</p>
+          <div class="fix"><b>Corrigir:</b> adiar os scripts não essenciais.</div></div>
+      </div>
+    </div>
+    <div class="note reveal">Quem executa é o time do site do lado deles; a Cardô entrega o diagnóstico e acompanha. Dados de campo (usuário real) do PageSpeed Insights, janela de 28 dias.</div>
+  </section>
+
+  <!-- ATO 3 -->
+  <div class="act reveal"><div class="lab">Ato 3</div><h2 class="disp">As <span class="ac">decisões</span></h2>
+    <p>As oportunidades rápidas que o dado aponta, e o que precisa sair fechado da reunião.</p></div>
+
+  <!-- OPORTUNIDADES -->
+  <section>
+    <div class="shead reveal"><div class="rn">IX</div><h2 class="disp">Oportunidades rápidas que o dado aponta</h2></div>
+    <div class="patterns reveal">
+      <div class="patc"><div class="pn">Agenda</div><h4>Promo de Quinta</h4><p>Quinta é o dia mais fraco (38 visitas/dia vs. 358 do domingo). Oferta de dia útil equilibra a ocupação sem roubar do fim de semana.</p></div>
+      <div class="patc"><div class="pn">Geo</div><h4>Paraná</h4><p>2º estado emissor (15,6%), Curitiba é a 2ª cidade. Reforçar geo e criativo para o PR, que já vem forte de forma orgânica.</p></div>
+      <div class="patc"><div class="pn">Parcerias</div><h4>Turismo regional</h4><p>48% vêm de fora de SC. Hotéis, agências e roteiros de Pomerode/Blumenau trazem demanda que não depende de mídia paga.</p></div>
+      <div class="patc"><div class="pn">Ticket</div><h4>Combo família</h4><p>47% vêm com dependentes. Combo e oferta para criança elevam o ticket médio.</p></div>
+      <div class="patc"><div class="pn">Canal</div><h4>Escalar o Instagram</h4><p>61% conhecem o parque por lá: é onde o retorno real está.</p></div>
+      <div class="patc"><div class="pn">Google</div><h4>Verba represada</h4><p>As campanhas de Google estão limitadas pelo orçamento com <b>ROAS alto (~13)</b>. Há retorno pedindo mais verba, respeitando o teto do mês.</p></div>
+    </div>
+  </section>
+
+  <!-- DECISÕES -->
+  <section id="decisoes">
+    <div class="shead reveal"><div class="rn">X</div><h2 class="disp">O que decidir na reunião</h2>
+      <p>O objetivo é sair com <b>quatro decisões fechadas</b>.</p></div>
+    <div class="decis reveal">
+      <div class="deci key"><div class="no">1</div><div><h4>Clima: as duas travas comerciais</h4><p>Aprovar o <b>voucher de validade longa</b> e o <b>reagendamento</b>. São o que transforma o problema do clima em venda, e destravam todo o resto do plano.</p></div></div>
+      <div class="deci"><div class="no">2</div><div><h4>Black Friday</h4><p>Definir a oferta, a validade do voucher e a meta de vendas.</p></div></div>
+      <div class="deci"><div class="no">3</div><div><h4>Velocidade</h4><p>Aprovar o plano (cache/CDN, imagens, scripts) e definir quem executa do lado deles.</p></div></div>
+      <div class="deci"><div class="no">4</div><div><h4>Criativos e dados</h4><p>Alinhar o que o Paulo produz (Black Friday + dias ruins), pegar a foto do topo em alta, e combinar o acesso ao número de vendas real (os Termos) para fechar o ROAS de verdade.</p></div></div>
+    </div>
+  </section>
+
+  <section class="foot" style="border-bottom:none">
+    <div class="foot-links reveal">
+      <a href="https://cardo-jpg.github.io/spitz-planejamento-estrategico/" target="_blank" rel="noopener">Dashboard do Spitz ao vivo →</a>
+    </div>
+    <div class="sig reveal">Pauta estratégica · <b>Cardô Marketing</b> × Spitz Pomer · reunião no parque</div>
+    <p class="disclaim reveal">Base: 287 dias de campanha da conta Meta do Spitz (2026) cruzados com a precipitação diária de Pomerode (open-meteo, arquivo histórico); relatório Termos de Aventura (01 a 30/09/2026); dados de campo do PageSpeed Insights (CrUX, janela de 28 dias); boletins de clima da Defesa Civil de SC e da Epagri/Ciram (2026). Os valores de venda vêm do pixel da conta e servem de direção para o padrão (seco vs. chuva, mês, dia); o número de vendas de verdade são os Termos, que vamos cruzar para fechar o ROAS real.</p>
+  </section>
+
+</div>
+
+<script>
+  const io=new IntersectionObserver((es)=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target);}}),{threshold:.08});
+  document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
